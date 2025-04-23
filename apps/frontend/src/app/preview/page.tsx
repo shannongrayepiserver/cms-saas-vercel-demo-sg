@@ -11,7 +11,7 @@ export default createEditPageComponent(setupFactory(), {
     cache: false,
     queryCache: false,
   }),
-  refreshTimeout: 500, // Enable this line when you have issues with the preview not updating at all
+  refreshTimeout: 1000, // Enable this line when you have issues with the preview not updating at all
 });
 
 export const dynamic = "force-dynamic";
