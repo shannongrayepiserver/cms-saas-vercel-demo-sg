@@ -17,11 +17,11 @@ export const Logo: FunctionComponent<LogoProps> = ({
   const defaultValue = useMemo(() => { return { logo, theme_switcher: false } }, [ logo ])
 
   // Get the logo configuration
-  const { logo: logoUrl } = useFlag("layout_configuration", defaultValue);
+  const myLogoUrl="https://www.theseniorlist.com/app/uploads/2021/11/USAA-Logo.png";
   return (
     <Link href="/" className="flex items-center grow-0 shrink-0" {...divProps}>
       <Image
-        src={logoUrl}
+        src={myLogoUrl}
         alt="Mosey Bank Logo"
         fill
         unoptimized
