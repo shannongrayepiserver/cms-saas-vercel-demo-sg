@@ -16,7 +16,7 @@ export const Logo: FunctionComponent<LogoProps> = ({
   // Create a stable default value that doesn't change every render
   const defaultValue = useMemo(() => { return { logo, theme_switcher: false } }, [ logo ])
 
-  const myLogoUrl="https://app-ocstdi202505r3z5p001.cms.optimizely.com/globalassets/_global/hds-logo.png";
+  const myLogoUrl="https://app-ocstlivings63q8jp001.cms.optimizely.com/globalassets/testimonials/charles_schwab_corporation_logo.svg.png";
   
   // Get the logo configuration
   const { logo: logoUrl } = useFlag("layout_configuration", defaultValue);
