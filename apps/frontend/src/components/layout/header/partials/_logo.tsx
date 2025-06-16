@@ -16,12 +16,14 @@ export const Logo: FunctionComponent<LogoProps> = ({
   // Create a stable default value that doesn't change every render
   const defaultValue = useMemo(() => { return { logo, theme_switcher: false } }, [ logo ])
 
+  const myLogoUrl="https://app-ocstdi202505r3z5p001.cms.optimizely.com/globalassets/_global/hds-logo.png";
+  
   // Get the logo configuration
   const { logo: logoUrl } = useFlag("layout_configuration", defaultValue);
   return (
     <Link href="/" className="flex items-center grow-0 shrink-0" {...divProps}>
       <Image
-        src={logoUrl}
+        src={myLogoUrl}
         alt="Mosey Bank Logo"
         fill
         unoptimized
